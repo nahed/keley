@@ -1,0 +1,3 @@
+keleycategory_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: KeleycategoryBundle:Default:index }

@@ -1,0 +1,19 @@
+Keley\categoryBundle\Entity\Category:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        tag:
+            type: string
+            length: 255
+
+    oneToMany:
+        products:
+            targetEntity: Keley\ProductBundle\Entity\Product
+            mappedBy: category
+    lifecycleCallbacks: {  }

@@ -1,0 +1,3 @@
+keley_product_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: KeleyProductBundle:Default:index }

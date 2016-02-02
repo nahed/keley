@@ -1,0 +1,9 @@
+services:
+#    keley_product.example:
+#        class: Keley\ProductBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+    keley_product.admin.product:
+        class: Keley\ProductBundle\Admin\ProductAdmin
+        arguments: [~, Keley\ProductBundle\Entity\Product, KeleyProductBundle:ProductAdmin]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Product}
